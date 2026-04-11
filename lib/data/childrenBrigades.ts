@@ -13,7 +13,6 @@ export const childrenBrigades: Brigade[] = [
     id: "kf-hadorf",
     name: "KF Hadorf",
     type: "children",
-    website: "https://www.instagram.com/feuerwehr_hadorf",
     fireStation: { street: "Maurerberg", streetNumber: "5", postCode: "82131", city: "Hadorf" },
   },
   {
