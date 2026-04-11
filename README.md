@@ -39,6 +39,7 @@ cp .env.local.example .env.local
 | `RESEND_API_KEY`  | Yes      | API key for the contact form email integration                 |
 | `INTERN_PASSWORD` | Yes      | Password for the protected member area                         |
 | `INTERN_SECRET`   | No       | HMAC secret for session tokens (defaults to `fallback-secret`) |
+| `CONTACT_EMAIL_TO`| No       | Receiver mail adress in context of the contact page (Resend)   |
 
 **3. Start the development server**
 
