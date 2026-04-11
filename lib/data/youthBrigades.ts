@@ -82,7 +82,8 @@ export const youthBrigades: Brigade[] = [
     id: "etterschlag",
     name: "JF Etterschlag",
     type: "youth",
-    website: "https://www.woerthsee-online.de/Woerthsee/Vereine/Feuerwehren_und_Hilfsdienste_-/FFWEtterschlag/ffwetterschlag.html",
+    website:
+      "https://www.woerthsee-online.de/Woerthsee/Vereine/Feuerwehren_und_Hilfsdienste_-/FFWEtterschlag/ffwetterschlag.html",
     email: "jugendwart@feuerwehr-etterschlag.de",
     fireStation: {
       street: "St. Floriansweg",
