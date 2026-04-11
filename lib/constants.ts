@@ -9,7 +9,7 @@ export const CONTACT = {
   director: "Dr. Franz Matheis",
   address: "Buttlerweg 10, 82327 Traubing",
   phone: "081573304",
-  email: "kbm.matheis@kbi-sta.de",
+  email: "Franz.Matheis@kbi.lra-starnberg.de",
 };
 
 export const STATS = {

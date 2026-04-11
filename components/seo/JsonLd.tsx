@@ -26,7 +26,7 @@ const organizationSchema = {
   contactPoint: {
     "@type": "ContactPoint",
     contactType: "customer service",
-    email: "kbm.matheis@kbi-sta.de",
+    email: "Franz.Matheis@kbi.lra-starnberg.de",
     availableLanguage: "German",
   },
 };
