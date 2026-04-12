@@ -10,7 +10,46 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
 };
 
-const FILES: { name: string; filename: string }[] = [];
+const FILES: { name: string; filename: string }[] = [
+  { name: "Ehrenamtszeugnis", filename: "ehrenamtszeugnis.pdf" },
+  { name: "Ehrenzeichen: Richtlinie", filename: "ehrenzeichen_richtlinie.pdf" },
+  { name: "Ehrenzeichen: Antrag", filename: "ehrenzeichen_antrag.doc" },
+  {
+    name: "Jugendflamme: Präsentation Mai 2010",
+    filename: "jugendflamme_praesentation_201005.pdf",
+  },
+  { name: "Jugendflamme: Broschüre", filename: "jugendflamme_broschuere.pdf" },
+  { name: "Jugendflamme: Anlage", filename: "jugendflamme_anlage.pdf" },
+  { name: "Jugendleistungsprüfung: Anmeldung", filename: "jugendleistungspruefung_anmeldung.pdf" },
+  {
+    name: "Jugendleistungsprüfung: Abnahmeniederschrift",
+    filename: "jugendleistungspruefung_abnahmeniederschrift.pdf",
+  },
+  {
+    name: "Jugendleistungsprüfung: Bewertungsblatt",
+    filename: "jugendleistungspruefung_bewertungsblatt.pdf",
+  },
+  {
+    name: "Jugendleistungsprüfung: Richtlinie 2010",
+    filename: "jugendleistungspruefung_richtlinie_2010.pdf",
+  },
+  {
+    name: "Jugendleistungsprüfung: Testfragen A",
+    filename: "jugendleistungspruefung_testfragen_a.pdf",
+  },
+  {
+    name: "Jugendleistungsprüfung: Testfragen B",
+    filename: "jugendleistungspruefung_testfragen_b.pdf",
+  },
+  {
+    name: "Jugendleistungsprüfung: Testfragen C",
+    filename: "jugendleistungspruefung_testfragen_c.pdf",
+  },
+  {
+    name: "Jugendleistungsprüfung: Testfragen D",
+    filename: "jugendleistungspruefung_testfragen_d.pdf",
+  },
+];
 
 export default async function InternPage() {
   const cookieStore = await cookies();
@@ -99,7 +138,9 @@ export default async function InternPage() {
                     </div>
                     <div className="min-w-0">
                       <p className="text-sm font-medium text-neutral-900 truncate">{name}</p>
-                      <p className="text-xs text-neutral-400 mt-0.5">PDF</p>
+                      <p className="text-xs text-neutral-400 mt-0.5">
+                        {filename.endsWith(".doc") ? "Word" : "PDF"}
+                      </p>
                     </div>
                   </div>
                   <a
