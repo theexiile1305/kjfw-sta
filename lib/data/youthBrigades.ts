@@ -283,12 +283,6 @@ export const youthBrigades: Brigade[] = [
     fireStation: { street: "Jahnweg", streetNumber: "14", postCode: "82229", city: "Oberalting" },
   },
   {
-    id: "oberbrunn",
-    name: "JF Oberbrunn",
-    type: "youth",
-    fireStation: { street: "Petriweg", streetNumber: "2", postCode: "82131", city: "Oberbrunn" },
-  },
-  {
     id: "oberpfaffenhofen",
     name: "JF Oberpfaffenhofen",
     type: "youth",

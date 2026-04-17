@@ -20,14 +20,9 @@ const FILES: { name: string; filename: string }[] = [
   },
   { name: "Jugendflamme: Broschüre", filename: "jugendflamme_broschuere.pdf" },
   { name: "Jugendflamme: Anlage", filename: "jugendflamme_anlage.pdf" },
-  { name: "Jugendleistungsprüfung: Anmeldung", filename: "jugendleistungspruefung_anmeldung.pdf" },
   {
     name: "Jugendleistungsprüfung: Abnahmeniederschrift",
     filename: "jugendleistungspruefung_abnahmeniederschrift.pdf",
-  },
-  {
-    name: "Jugendleistungsprüfung: Bewertungsblatt",
-    filename: "jugendleistungspruefung_bewertungsblatt.pdf",
   },
   {
     name: "Jugendleistungsprüfung: Richtlinie 2010",

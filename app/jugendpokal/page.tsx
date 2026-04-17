@@ -24,8 +24,8 @@ const exercises = [
   },
   {
     num: 3,
-    title: "Brustbund mit Mastwurf",
-    desc: "Ein Brustbund wird angelegt und mit einem Mastwurf gesichert.",
+    title: "Brustbund mit Spierenstich",
+    desc: "Ein Brustbund wird angelegt und mit einem Spierenstich gesichert.",
   },
   {
     num: 4,
@@ -71,8 +71,7 @@ export default function JugendpokalPage() {
           </p>
           <p className="text-neutral-700 leading-relaxed mb-6">
             Der Austragungsort wechselt jedes Jahr und wird von einer anderen Mitgliedsfeuerwehr
-            ausgerichtet. Der Wanderpokal einer Altersklasse geht dauerhaft in den Besitz jener
-            Gruppe über, die ihn dreimal in Folge gewonnen hat.
+            ausgerichtet.
           </p>
 
           <div className="grid gap-5 sm:grid-cols-2">
@@ -139,8 +138,8 @@ export default function JugendpokalPage() {
             Historie &amp; Chronik
           </h2>
           <p className="text-neutral-700 leading-relaxed mb-6">
-            Seit der ersten Austragung 1979 in Starnberg hat sich der Jugendpokal zu einer festen
-            Tradition im Landkreis entwickelt. Die folgende Übersicht zeigt die bisherigen
+            Seit der ersten Austragung 1979 in Gauting hat sich der Jugendpokal zu einer festen
+            Tradition im Landkreis Starnberg entwickelt. Die folgende Übersicht zeigt die bisherigen
             Austragungen.
           </p>
 

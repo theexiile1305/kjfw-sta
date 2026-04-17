@@ -13,8 +13,8 @@ export const CONTACT = {
 };
 
 export const STATS = {
-  youthBrigades: 43,
+  youthBrigades: 42,
   childrenBrigades: 9,
-  youthMembers: 492,
-  childrenMembers: 124,
+  youthMembers: 569,
+  childrenMembers: 219,
 };

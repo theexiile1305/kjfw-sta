@@ -116,7 +116,7 @@ Brigade and event data lives as typed TypeScript arrays under `lib/data/`:
 
 | File                  | Contents                                                           |
 | --------------------- | ------------------------------------------------------------------ |
-| `youthBrigades.ts`    | 43 Jugendfeuerwehren with fire station address, website, and email |
+| `youthBrigades.ts`    | 42 Jugendfeuerwehren with fire station address, website, and email |
 | `childrenBrigades.ts` | 9 Kinderfeuerwehren with fire station address, website, and email  |
 | `events.ts`           | Calendar events                                                    |
 | `youthCup.ts`         | Jugendpokal results                                                |
