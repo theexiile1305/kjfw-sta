@@ -30,7 +30,7 @@ export default function UeberUnsPage() {
             Die Kreisjugendfeuerwehr Starnberg ist die Dachorganisation aller Jugendfeuerwehren und
             Kinderfeuerwehren im Landkreis Starnberg. Als Teil des Kreisfeuerwehrverbands
             koordinieren wir die übergreifende Jugendarbeit und vertreten die Interessen von mehr
-            als 600 jungen Menschen.
+            als 700 jungen Menschen.
           </p>
           <p className="mt-4 text-neutral-700 leading-relaxed">
             Unsere Arbeit ist vollständig ehrenamtlich. Alle Führungskräfte und Betreuer widmen ihre

@@ -88,12 +88,12 @@ export default function JugendpokalPage() {
             </Card>
 
             <Card>
-              <h3 className="text-base font-bold text-neutral-900 mb-3">Streckenrekord</h3>
+              <h3 className="text-base font-bold text-neutral-900 mb-3">
+                Streckenrekord beim letzten Jugendpokal in Pöcking
+              </h3>
               <p className="text-3xl font-bold text-fire-500">{youthCupRecord.time}</p>
               <p className="text-sm text-neutral-500 mt-1">{youthCupRecord.team}</p>
-              <p className="text-xs text-neutral-400 mt-3 leading-relaxed">
-                Der Pokal kann nach dreimaligem Sieg in Folge dauerhaft gewonnen werden.
-              </p>
+              <p className="text-xs text-neutral-400 mt-3 leading-relaxed"></p>
             </Card>
           </div>
         </section>

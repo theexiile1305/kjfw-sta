@@ -30,7 +30,7 @@ export default function HeroSection() {
           </h1>
           <p className="mt-6 text-lg text-neutral-300 leading-relaxed max-w-xl">
             Gemeinsam für die Jugend. 42 Jugendfeuerwehren und 9 Kinderfeuerwehren im Landkreis
-            Starnberg begeistern über 600 junge Menschen für den Feuerwehrdienst.
+            Starnberg begeistern über 700 junge Menschen für den Feuerwehrdienst.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-4">
             <Link

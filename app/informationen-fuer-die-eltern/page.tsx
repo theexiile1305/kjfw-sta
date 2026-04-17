@@ -131,7 +131,7 @@ export default function ElternPage() {
                 },
                 {
                   title: "Leistungsabzeichen",
-                  desc: "Möglichkeit zum Erwerb des Bayerischen Jugendfeuerwehr-Leistungsabzeichens in verschiedenen Stufen.",
+                  desc: "Möglichkeit zum Erwerb der Bayerischen Jugendleistungsspange und der Jugendflamme in verschiedenen Stufen.",
                 },
               ].map(({ title, desc }) => (
                 <Card key={title}>
@@ -169,8 +169,8 @@ export default function ElternPage() {
             </div>
             <p className="text-neutral-700 leading-relaxed mb-4">
               Jede Jugendfeuerwehr verfügt über ein erfahrenes Betreuungsteam aus ausgebildeten
-              Jugendfeuerwehrwarten. Die Jugendlichen wählen zudem ihre eigene Jugendvertretung, die
-              ihre Interessen im Verein repräsentiert.
+              Jugendfeuerwehrwarten. Die Jugendlichen können zudem ihre eigene Jugendvertretung, die
+              ihre Interessen im Verein repräsentiert, wählen.
             </p>
             <div className="grid gap-4 sm:grid-cols-2">
               {[
