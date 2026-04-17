@@ -11,7 +11,8 @@ const ALLOWED_FILES: Record<string, string> = {
   "jugendflamme_praesentation_201005.pdf": "Jugendflamme: Präsentation Mai 2010",
   "jugendflamme_broschuere.pdf": "Jugendflamme: Broschüre",
   "jugendflamme_anlage.pdf": "Jugendflamme: Anlage",
-  "jugendleistungspruefung_abnahmeniederschrift.pdf": "Jugendleistungsprüfung: Abnahmeniederschrift",
+  "jugendleistungspruefung_abnahmeniederschrift.pdf":
+    "Jugendleistungsprüfung: Abnahmeniederschrift",
   "jugendleistungspruefung_richtlinie_2010.pdf": "Jugendleistungsprüfung: Richtlinie 2010",
   "jugendleistungspruefung_testfragen_a.pdf": "Jugendleistungsprüfung: Testfragen A",
   "jugendleistungspruefung_testfragen_b.pdf": "Jugendleistungsprüfung: Testfragen B",

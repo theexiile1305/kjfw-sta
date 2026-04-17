@@ -22,8 +22,8 @@ export default function JugendfeuerwehrenPage() {
         <div className="mt-4 rounded-card bg-fire-50 border border-fire-100 p-4 text-sm text-fire-800">
           Die Jugendfeuerwehr bietet jungen Menschen zwischen 12 und 17 Jahren die Möglichkeit,
           Feuerwehrtechnik zu erlernen, Kameradschaft zu erleben und sich in der Gemeinschaft zu
-          engagieren. Mit der Vollendung des 17. Lebensjahrs kann der Übertritt in die aktive Feuerwehr
-          erfolgen.
+          engagieren. Mit der Vollendung des 17. Lebensjahrs kann der Übertritt in die aktive
+          Feuerwehr erfolgen.
         </div>
 
         <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
