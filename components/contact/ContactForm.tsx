@@ -5,6 +5,11 @@ import { submitContactForm } from "@/app/kontakt/actions";
 import type { ContactFormState } from "@/types/contact";
 import Button from "@/components/ui/Button";
 
+interface ContactFormProps {
+  formToken: string;
+  formTs: string;
+}
+
 const initialState: ContactFormState = { status: "idle" };
 
 const inputClass =
@@ -13,7 +18,7 @@ const inputClass =
   "focus:border-fire-500 focus:outline-none focus:ring-1 focus:ring-fire-500 " +
   "disabled:opacity-50";
 
-export default function ContactForm() {
+export default function ContactForm({ formToken, formTs }: ContactFormProps) {
   const [state, formAction, isPending] = useActionState(submitContactForm, initialState);
 
   if (state.status === "success") {
@@ -37,6 +42,10 @@ export default function ContactForm() {
         <label htmlFor="website">Website (bitte leer lassen)</label>
         <input id="website" name="website" type="text" autoComplete="off" tabIndex={-1} />
       </div>
+
+      {/* Time-based HMAC token — verified server-side to block instant bot submissions */}
+      <input type="hidden" name="form_token" value={formToken} />
+      <input type="hidden" name="form_ts" value={formTs} />
 
       {(state.status === "error" || state.status === "rate_limited") && (
         <div

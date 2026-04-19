@@ -3,6 +3,9 @@ import { buildMetadata } from "@/lib/metadata";
 import { CONTACT } from "@/lib/constants";
 import SectionHeading from "@/components/ui/SectionHeading";
 import ContactForm from "@/components/contact/ContactForm";
+import { createFormToken } from "@/lib/form-token";
+
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = buildMetadata({
   title: "Kontakt",
@@ -12,6 +15,8 @@ export const metadata: Metadata = buildMetadata({
 });
 
 export default function KontaktPage() {
+  const { token: formToken, ts: formTs } = createFormToken();
+
   return (
     <section className="py-16 lg:py-24">
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
@@ -63,7 +68,7 @@ export default function KontaktPage() {
           {/* Contact form */}
           <div className="lg:col-span-2">
             <h2 className="text-lg font-bold text-neutral-900 mb-6">Nachricht senden</h2>
-            <ContactForm />
+            <ContactForm formToken={formToken} formTs={formTs} />
           </div>
         </div>
       </div>

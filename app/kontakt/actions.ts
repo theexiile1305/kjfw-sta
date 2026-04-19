@@ -3,6 +3,7 @@
 import { z } from "zod";
 import { Resend } from "resend";
 import type { ContactFormState } from "@/types/contact";
+import { verifyFormToken } from "@/lib/form-token";
 
 // Zod 4: email is now a top-level validator (z.email())
 // and string validators remain on z.string()
@@ -31,7 +32,21 @@ export async function submitContactForm(
     return { status: "success" };
   }
 
-  // 2. Parse and validate with Zod 4
+  // 2. Time-based HMAC token — rejects forged or instant-submit requests
+  const formToken = formData.get("form_token");
+  const formTs = formData.get("form_ts");
+  if (
+    typeof formToken !== "string" ||
+    typeof formTs !== "string" ||
+    !verifyFormToken(formToken, formTs)
+  ) {
+    return {
+      status: "rate_limited",
+      message: "Ungültige Anfrage. Bitte lade die Seite neu und versuche es erneut.",
+    };
+  }
+
+  // 3. Parse and validate with Zod 4
   const raw = {
     name: formData.get("name"),
     email: formData.get("email"),
@@ -52,7 +67,7 @@ export async function submitContactForm(
 
   const { name, email, subject, message } = parsed.data;
 
-  // 3. Send via Resend
+  // 4. Send via Resend
   const to = process.env["CONTACT_EMAIL_TO"];
   if (!to) {
     console.error("[kontakt] CONTACT_EMAIL_TO is not configured");
