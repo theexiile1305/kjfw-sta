@@ -9,12 +9,4 @@ export const events: CalendarEvent[] = [
     description: "Der 46. Jugendpokal der Kreisjugendfeuerwehr Starnberg.",
     category: "competition",
   },
-  {
-    id: "deutschen-jugendleistungsspange-2026",
-    title: "Deutsche Jugendleistungsspange 2026",
-    date: "2026-07-18",
-    location: "Höhenrain",
-    description: "Abnahme der Deutschen Jugendleistungsspange in Höhenrain.",
-    category: "training",
-  },
 ];
