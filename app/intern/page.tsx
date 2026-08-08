@@ -11,6 +11,7 @@ export const metadata: Metadata = {
 };
 
 const FILES: { name: string; filename: string }[] = [
+  { name: "Jugendpokal Ausschreibung", filename: "jugendpokal_ausschreibung_2026.pdf" },
   { name: "Ehrenamtszeugnis", filename: "ehrenamtszeugnis.pdf" },
   { name: "Ehrenzeichen: Richtlinie", filename: "ehrenzeichen_richtlinie.pdf" },
   { name: "Ehrenzeichen: Antrag", filename: "ehrenzeichen_antrag.doc" },

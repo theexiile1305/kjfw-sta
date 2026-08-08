@@ -5,6 +5,7 @@ import { readFile } from "fs/promises";
 import path from "path";
 
 const ALLOWED_FILES: Record<string, string> = {
+  "jugendpokal_ausschreibung_2026.pdf": "Jugendpokal Ausschreibung",
   "ehrenamtszeugnis.pdf": "Ehrenamtszeugnis",
   "ehrenzeichen_richtlinie.pdf": "Ehrenzeichen: Richtlinie",
   "ehrenzeichen_antrag.doc": "Ehrenzeichen: Antrag",
