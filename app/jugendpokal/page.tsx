@@ -89,7 +89,7 @@ export default function JugendpokalPage() {
 
             <Card>
               <h3 className="text-base font-bold text-neutral-900 mb-3">
-                Streckenrekord beim letzten Jugendpokal in Pöcking
+                Streckenrekord beim letzten Jugendpokal in Maising
               </h3>
               <p className="text-3xl font-bold text-fire-500">{youthCupRecord.time}</p>
               <p className="text-sm text-neutral-500 mt-1">{youthCupRecord.team}</p>

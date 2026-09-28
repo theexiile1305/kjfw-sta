@@ -233,6 +233,14 @@ export const youthCupHistory: YouthCupEdition[] = [
     akII: "Hadorf",
     akIII: "Tutzing I",
   },
+  {
+    year: 2026,
+    edition: 46,
+    location: "Maising",
+    akI: "Tutzing",
+    akII: "Pöcking I",
+    akIII: "Buch",
+  },
 ];
 
 export const youthCupAgeGroups = [
@@ -242,6 +250,6 @@ export const youthCupAgeGroups = [
 ];
 
 export const youthCupRecord = {
-  time: "3:46 min",
-  team: "Machtlfing AK III",
+  time: "4:09 min",
+  team: "Buch",
 };

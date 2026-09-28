@@ -1,12 +1,3 @@
 import type { CalendarEvent } from "@/types/event";
 
-export const events: CalendarEvent[] = [
-  {
-    id: "jugendpokal-2026",
-    title: "Jugendpokal 2026",
-    date: "2026-09-26",
-    location: "Maising",
-    description: "Der 46. Jugendpokal der Kreisjugendfeuerwehr Starnberg.",
-    category: "competition",
-  },
-];
+export const events: CalendarEvent[] = [];
