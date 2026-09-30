@@ -1,23 +1,20 @@
 version: 2
 
 updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "cron"
+      cronjob: "0 4 * * *"
+      timezone: "Europe/Berlin"
+    cooldown:
+      default-days: 1
+
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "daily"
-      time: "04:30"
+      interval: "cron"
+      cronjob: "0 4 * * *"
       timezone: "Europe/Berlin"
-    open-pull-requests-limit: 10
-    labels: ["dependencies", "github-actions"]
-    commit-message:
-      prefix: "deps"
-      include: "scope"
-    pull-request-branch-name:
-      separator: "-"
-    groups:
-      actions-minor-patch:
-        patterns: ["*"]
-        update-types: ["minor", "patch"]
-      actions-major:
-        patterns: ["*"]
-        update-types: ["major"]
+    cooldown:
+      default-days: 1
