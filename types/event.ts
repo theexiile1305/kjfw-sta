@@ -3,7 +3,7 @@ export type EventCategory = "competition" | "training" | "event" | "other";
 export interface CalendarEvent {
   id: string;
   title: string;
-  date: string; // ISO 8601 "YYYY-MM-DD"
+  date: string; // ISO 8601 "YYYY-MM-DD" or "YYYY-MM-DDTHH:mm"
   endDate?: string;
   location?: string;
   description?: string;

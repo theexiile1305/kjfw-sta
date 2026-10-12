@@ -10,13 +10,24 @@ export const metadata: Metadata = buildMetadata({
   path: "/events",
 });
 
+// Dates are wall-clock times (Europe/Berlin); parse as UTC and format as UTC to avoid server timezone shifts.
 function formatDate(iso: string): string {
-  return new Date(iso).toLocaleDateString("de-DE", {
+  return new Date(`${iso}Z`).toLocaleDateString("de-DE", {
     weekday: "long",
     day: "2-digit",
     month: "long",
     year: "numeric",
+    timeZone: "UTC",
   });
+}
+
+function formatTime(iso: string): string | null {
+  if (!iso.includes("T")) return null;
+  return `${new Date(`${iso}Z`).toLocaleTimeString("de-DE", {
+    hour: "2-digit",
+    minute: "2-digit",
+    timeZone: "UTC",
+  })} Uhr`;
 }
 
 const categoryColors: Record<string, string> = {
@@ -62,24 +73,26 @@ export default function TerminePage() {
                       {categoryLabels[event.category] ?? event.category}
                     </span>
                     <h2 className="text-lg font-bold text-neutral-900">{event.title}</h2>
-                    {event.description && (
-                      <p className="mt-1 text-sm text-neutral-600 leading-relaxed">
-                        {event.description}
-                      </p>
-                    )}
                   </div>
                   <div className="shrink-0 text-right text-sm">
                     <time dateTime={event.date} className="font-medium text-neutral-800 block">
                       {formatDate(event.date)}
+                      {formatTime(event.date) && `, ${formatTime(event.date)}`}
                     </time>
                     {event.endDate && event.endDate !== event.date && (
                       <time dateTime={event.endDate} className="text-neutral-500">
                         bis {formatDate(event.endDate)}
+                        {formatTime(event.endDate) && `, ${formatTime(event.endDate)}`}
                       </time>
                     )}
                     {event.location && <p className="text-neutral-500 mt-1">{event.location}</p>}
                   </div>
                 </div>
+                {event.description && (
+                  <p className="mt-4 text-sm text-neutral-600 leading-relaxed">
+                    {event.description}
+                  </p>
+                )}
               </li>
             ))}
           </ul>
